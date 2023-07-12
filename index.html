@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <link rel="stylesheet" href="../css/bai4.css">
+    <script>
+        // Lấy giá trị lượt truy cập từ localStorage
+        var visitor = localStorage.getItem("visitor");
+
+        // Kiểm tra nếu giá trị lượt truy cập chưa được đặt, tức là người dùng chưa truy cập trang web trước đó
+        if (!visitor) {
+            // Đặt giá trị lượt truy cập là 1
+            visitor = 1;
+        } else {
+            // Nếu giá trị lượt truy cập đã được đặt, tăng giá trị lên 1
+            visitor = parseInt(visitor) + 1;
+        }
+
+        // Lưu giá trị lượt truy cập mới vào localStorage
+        localStorage.setItem("visitor", visitor);
+
+        // Hiển thị thông báo về lượt truy cập
+        alert("Bạn là khách thứ " + visitor + " truy cập trang web này.");
+    </script>
+</head>
+<body>
+    <h1>Trang web ghi nhận lượt truy cập</h1>
+    <p>Xin cảm ơn quý khách đã ghé thăm trang web của chúng tôi!</p>
+</body>
+</html>

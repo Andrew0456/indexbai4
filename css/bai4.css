@@ -1,0 +1,21 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+}
+h1{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    border-radius: 40px;
+}
+p{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: cadetblue;
+    border-radius: 40px;
+    color: rgb(255, 0, 119);
+    font-size: 20px;
+    font-weight: bold;
+}
